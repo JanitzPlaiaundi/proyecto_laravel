@@ -18,9 +18,9 @@
                             <table class="w-full border-collapse border border-gray-400 dark:border-gray-600">
                                 <thead>
                                     <tr class="bg-gray-100 dark:bg-gray-600">
-                                        <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-left">Nombre</th>
-                                        <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-left">Precio</th>
-                                        <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-left">Stock</th>
+                                        <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-left text-black">Nombre</th>
+                                        <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-left text-black">Precio</th>
+                                        <th class="border border-gray-400 dark:border-gray-600 px-4 py-2 text-left text-black">Stock</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-200 dark:divide-gray-600">
@@ -39,4 +39,5 @@
             </div>
         </div>
     </div>
+    <a href="/orders">Ir a pedidos</a>
 </x-app-layout>

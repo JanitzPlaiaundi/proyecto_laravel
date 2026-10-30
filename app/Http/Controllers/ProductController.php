@@ -10,11 +10,12 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
-    {
-        $products = Product::latest()->get();
-
-        return view('dashboard', ["products" => $products]);
+    public function index()
+    {   
+        // Filtrado de mas nuevo a mas viejo, Eloquent permite poner varios metodos antes de pedir los datos con ->get()
+        //$products = Product::latest()->get();
+        $products = Product::all();
+        return view('dashboard', compact('products'));
 
     }
 
