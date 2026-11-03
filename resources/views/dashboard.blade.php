@@ -39,5 +39,4 @@
             </div>
         </div>
     </div>
-    <a href="/orders">Ir a pedidos</a>
 </x-app-layout>

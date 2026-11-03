@@ -28,7 +28,7 @@
             @endisset
 
             <!-- Page Content -->
-            <main class="flex flex-1">
+            <main class="flex flex-col flex-1">
                 {{ $slot }}
             </main>
         </div>

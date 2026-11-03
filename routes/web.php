@@ -19,6 +19,11 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get("/orders", [OrderController::class, "index"]);
+Route::get("/orders", [OrderController::class, "index"])->name("orders.index");
+Route::get("/orders/create", [OrderController::class, "create"])->name("orders.create");
+Route::post("/orders", [OrderController::class, "store"])->name("orders.store");
+
+Route::get("/orders/delete", [OrderController::class, "delete"])->name("orders.delete");
+Route::delete("/orders", [OrderController::class, "destroy"])->name("orders.destroy");
 
 require __DIR__.'/auth.php';
